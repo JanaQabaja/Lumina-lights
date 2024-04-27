@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="hero">
+    <nav>
+         <img src="images/logo.png" class="logo">
+         <ul>
+            <li><a href="#Trendy">Trendy</a></li>
+            <li><a href="#Styles">Styles</a></li>
+            <li><a href="#inspiration">Inspirations</a></li>
+        </ul>
+        
+        <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        
+    </nav>
+
+    <div class="main">
+        <div class="lamp-container">
+            <img src="images/lamp.png" class="lamp" id="lamp">
+            <img src="images/light.png" class="light" id="light">
+        </div>
+        
+        <div class="text-container">
+            <h1>Ideas <br> for Illumination</h1>
+            <p>Explore creative lighting solutions for every space. From elegant floor lamps to cozy string lights, find inspiration for your home or office decor.</p>
+            <a href="">Browse Decoration Examples</a>
+        </div>
+    </div>
+
+    <!--trend-->
+
+    <div class="trend" id="Trendy">
+      <div class=" pt-5 d-flex justify-content-center">
+        <div class="title position-relative  ">
+          <span class="text-uppercase border-bottom border-custom" >Trendy</span>
+          <h2>Chic, stylish illumination</h2>
+          </div>
+       </div>
+       <div class="gallery-wrap">
+        <i class="fa-solid fa-circle-left" id="backBtn"></i>
+
+        <div class="gallery">
+        <div>
+        <span><img src="images/tr1.jpg"></span> 
+        <span><img src="images/tr2.jpg"></span>
+        <span><img src="images/tr3.jpg"></span>
+        </div>
+        <div>
+        <span><img src="images/tr4.jpg"></span>
+        <span><img src="images/tr5.jpg"></span>
+        <span><img src="images/tr6.jpg"></span>
+        </div>
+        
+        <div>
+          <span><img src="images/tr7.jpg"></span>
+          <span><img src="images/tr8.jpg"></span>
+          <span><img src="images/tr9.jpg"></span>
+          </div>
+          </div>
+        
+        <i class="fa-solid fa-circle-right" id="nextBtn"></i> 
+      </div> 
+        </div>
+        
+          
+    
+    <!--styles-->
+<div class="styles" id="Styles">
+  <div class="container">
+    <div class=" pt-5 d-flex justify-content-center">
+      <div class="title position-relative  ">
+        <span class="text-uppercase border-bottom border-custom" >STYLES</span>
+        <h2>Typical styles</h2>
+        </div>
+     </div>
+    
+    <div class="row butns">
+      <div class="col">
+        <button class="btn cont" onclick="showCategory('All')">All</button>
+        <button class="btn  cont" onclick="showCategory('Hanging Lamps')">Hanging Lamps</button>
+        <button class="btn  cont" onclick="showCategory('Floor Lamps')">Floor Lamps</button>
+        <button class="btn  cont" onclick="showCategory('Table Lamps')">Table Lamps</button>
+      </div>
+    </div>
+    <div class="content">
+    <div id="imageGallery" class="row mt-3"></div>
+  </div>
+  </div>
+     
+              </div>
+        
+
+
+<!--inspiration-->
+
+    <div class="inspiration" id="inspiration">
+      <div class=" pt-5 d-flex justify-content-center">
+        <div class="title position-relative  ">
+          <span class="text-uppercase border-bottom border-custom" >Inspiration</span>
+          <h2>Illuminate Your Home</h2>
+          </div>
+       </div>
+   
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators" id="carouselIndicators"></ol>
+            <div class="carousel-inner" id="carouselInner"></div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+      </div>  
+       <!--footer-->
+<footer class="footer py-5 " id="footer">
+  <div class="container">
+    <div class="row justify-content-between align-item-center">
+      <div class="col-md-4 text-center copy">
+        &copy;April|2024
+      </div>
+      <div class="text-center col-md-4">
+        <img class="endlogo" src="images/logo.png" alt="">
+      
+      </div>
+      <div class="text-center col-md-4 linked"> 
+        <p class="mb-0">Made By <span class="custom-color">Jana Qabajah</span></p>
+        <p><i class="fa-brands fa-linkedin"></i>  Jana Qabajah</p>
+      </div>
+    </div>
+  </div>
+  </footer>
+    </div>
+   
+  
+  
+  
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
